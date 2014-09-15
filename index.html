@@ -8,9 +8,13 @@ layout: default
     {% for post in paginator.posts %}
       <div class="post {% if site.animated %}animated fade-in-down{% endif %}">
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-          <h3 class="h2 post-title">{{ post.title }}</h3>
-          <p class="post-summary">{{ post.summary }}</p>
+          <div class ="post-image-block">
+            <div class="post-text">
+              <div class="post-text-number">{{post.number}}</div><br>
+              <div class="post-text-title"> {{post.title}}</div>
+            </div>
+            <img class="post-image" src="{{post.image}}"/>
+          </div>
         </a>
       </div>
     {% endfor %}

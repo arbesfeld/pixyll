@@ -1,10 +1,10 @@
 # Site settings
-title: Pixyll
-email: your_email@example.com
-author: John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title: how to make [almost] anything
+email: matt@arbesfeld.com
+author: matthew arbesfeld
+description: "Matthew Arbesfeld's website for MAS.863 -- How to Make Almost Anything"
 baseurl: ""
-url: "http://pixyll.com"
+url: "http://www.arbesfeld.com"
 google_analytics:
 animated: false
 
