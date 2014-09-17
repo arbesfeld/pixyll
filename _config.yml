@@ -3,9 +3,9 @@ title: how to make [almost] anything
 email: matt@arbesfeld.com
 author: matthew arbesfeld
 description: "Matthew Arbesfeld's website for MAS.863 -- How to Make Almost Anything"
-baseurl: ""
-url: "http://fab.cba.mit.edu/classes/863.14/people/matthew_arbesfeld/"
-google_analytics:
+baseurl: "http://fab.cba.mit.edu/classes/863.14/people/matthew_arbesfeld"
+url: "/"
+google_analytics: UA-27801400-5
 animated: false
 
 # Build settings
