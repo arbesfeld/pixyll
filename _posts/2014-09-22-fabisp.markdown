@@ -1,0 +1,23 @@
+---
+layout:     post
+title:      FabISP
+image:      img/fabisp_header.jpg
+number:     '02'
+---
+
+The FabISP is an in-system programmer which lets you program microcontrollers with only a USB cable and a 6-pin to 6-pin cable. I followed [this guide](http://academy.cba.mit.edu/2012/labs/providence/tutorials/05.html) pretty closely to fabricate the board.
+
+I ended up having to make three FabISPs, which gave me a big headache but also a ton of soldering practice. My mistakes were pretty silly: I flipped the orientation of the microcontroller on board 1, and board 2 had a missing copper trace which was too hard to fix. Board 3 worked perfectly, however!
+
+{% include image.html url="/img/fabisp_boards.jpg" description="Three FabISPs, but only one works" %}
+
+{% include image.html url="/img/fabisp_success.jpg" description="Command prompt of success: 'Multiple Vendors USBtiny'" %}
+
+Building the board is just three steps:
+
+{% include image.html url="/img/fabisp_milling.jpg" description="1. Mill the board with the Modela." %}
+
+{% include image.html url="/img/fabisp_stuffing.jpg" description="2. Solder the components. Don't forget to check the orientation of the microcontroller and diodes!" %}
+
+{% include image.html url="/img/fabisp_programming.jpg" description="3. Program the board using the ATAVRIP2 Programmer." %}
+
