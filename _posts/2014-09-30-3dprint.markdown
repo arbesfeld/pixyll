@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      3d Print / Scan
+title:      3d Printing & Scanning
 image:      img/3d_header.jpg
 number:     '03'
 ---
@@ -23,7 +23,16 @@ number:     '03'
 <iframe style="display:block; margin: 0 auto; padding-bottom: 30px" width="630" height="473" src="//www.youtube.com/embed/dYpcFyn983s" frameborder="0" allowfullscreen></iframe>
 
 ### 3d printing
-3d printing coming soon!
+
+I tried printing an eyeball in the style of the Mario spooky eyeball:
+
+{% include image.html url="/img/3d_eyeball_inspiration.jpg" description="" %}
+
+I used the FormLabs printer for the clear resin. My first print failed miserably. The hollow portion was oriented upwards and caved in on itself:
+
+{% include image.html url="/img/3d_print_fail.jpg" description="Failed eyeball print." %}
+
+I'm going to print another eyeball later this week and see how it goes.
 
 
 
