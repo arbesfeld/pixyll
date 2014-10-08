@@ -5,11 +5,9 @@ image:      img/fabisp_header.jpg
 number:     '02'
 ---
 
+*While I was constructing my board, I erred in using a test board which was designed and milled by [Tim Fallon](http://fab.cba.mit.edu/classes/863.14/people/tim_fallon/index.html). A previous version of this post included an image of Tim's board and has been removed.*
+
 The FabISP is an in-system programmer which lets you program microcontrollers with only a USB cable and a 6-pin to 6-pin cable. I followed [this guide](http://academy.cba.mit.edu/2012/labs/providence/tutorials/05.html) pretty closely to fabricate the board.
-
-I ended up having to make three FabISPs, which gave me a big headache but also a ton of soldering practice. My mistakes were pretty silly: I flipped the orientation of the microcontroller on board 1, and board 2 had a missing copper trace which was too hard to fix. Board 3 worked perfectly, however!
-
-{% include image.html url="/img/fabisp_boards.jpg" description="Three FabISPs, but only one works" %}
 
 {% include image.html url="/img/fabisp_success.jpg" description="Command prompt of success: 'Multiple Vendors USBtiny'" %}
 

@@ -1,0 +1,37 @@
+---
+layout:     post
+title:      Computer Controlled Machining
+image:      img/big_header.jpg
+number:     '04'
+---
+
+This week I worked towards my [proposed final project](http://fab.cba.mit.edu/classes/863.14/people/matthew_arbesfeld/2014/06/11/final-project-proposal) by building a "cube" in the assembly. Each cube can fit together with magnets to form a larger furniture piece.
+
+This was my first attempt at using SolidWorks. I used the ["Master Model"](https://www.youtube.com/watch?v=cpVMr9dABus) approach -- which means creating one "master sketch" with the entire design and deriving each part from that master sketch.
+
+Here is the final SolidWorks assembly, which includes dovetail joints between faces and holes for the connector magnets:
+
+{% include image.html url="/img/big_solidworks.jpg" description="SolidWorks assembly of the cube." %}
+
+I exported this to .dwg format by using the "create drawing from part" command in SolidWorks, and imported the 2d file into Rhino where I made some final edits for CAM. To prevent chamfer at the corners of the dovetail joints, I created small holes at each 90 degree turn in Rhino. I imported the final .3dm file into Mastercam and sent the job to the mill:
+
+{% include image.html url="/img/big_mill_all.jpg" description="" %}
+
+{% include image.html url="/img/big_mill_one_square.jpg" description="Final result of milling -- it only took about 10 minutes to mill everything." %}
+
+I ordered some [magnets](http://www.mcmaster.com/#catalog/120/3482/=u238ut) and they fit nicely into these cuts:
+
+{% include image.html url="/img/big_magnet_hole.jpg" description="" %}
+
+All that was left to assemble the cube. Nothing that a mallet couldn't solve!
+
+{% include image.html url="/img/big_construction.jpg" description="" %}
+{% include image.html url="/img/big_dovetail.jpg" description="" %}
+{% include image.html url="/img/big_full_cube.jpg" description="" %}
+
+I am looking forward to building more cubes and seeing them connect with magnets. The best part is yet to come -- electronics!
+
+
+
+
+
