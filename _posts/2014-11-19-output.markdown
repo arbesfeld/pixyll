@@ -1,0 +1,28 @@
+---
+layout:     post
+title:      Output Devices
+image:      img/output_header.jpg
+number:     '10'
+---
+
+I got my hands on a solid state relay and wanted to give it a try this week. A solid state relay allows you to control
+a high-current AC source with a low-current DC input:
+
+{% include image.html url="/img/output_ssr.jpg" description="" %}
+
+I decided to power an extension cord so that I could plug any AC device into the current. To connect the extension cord to the relay, I clipped the "hot" wire of the extension cord (identified by having no writing on the wire), and attached each end to the relay leads:
+
+{% include image.html url="/img/output_ssr_with_ac.jpg" description="" %}
+
+Attached the DC source is simple as well. Here is the fully connected board. I first tested with a power supply to make sure the relay worked as intended:
+
+{% include image.html url="/img/output_power_supply.jpg" description="" %}
+{% include image.html url="/img/output_ssr_powered.jpg" description="" %}
+
+Finally, I modified a simple board which enabled an output pin when the button was pressed. This turned on the relay, which turned on an immersion heater. I am almost ready to start building my sous-vide!
+
+{% include image.html url="/img/output_ssr_with_button.jpg" description="" %}
+{% include image.html url="/img/output_water_heated.jpg" description="" %}
+
+
+

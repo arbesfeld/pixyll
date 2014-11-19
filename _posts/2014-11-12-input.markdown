@@ -1,0 +1,25 @@
+---
+layout:     post
+title:      Input Devices
+image:      img/input_header.jpg
+number:     '09'
+---
+
+This week I wanted to measure water temperature, so I used a thermocouple:
+
+{% include image.html url="/img/input_probe.jpg" description="" %}
+
+{% include image.html url="/img/input_schematic.jpg" description="" %}
+{% include image.html url="/img/input_board.jpg" description="" %}
+{% include image.html url="/img/input_parts.jpg" description="" %}
+{% include image.html url="/img/input_stuffed.jpg" description="" %}
+{% include image.html url="/img/input_thermoprobe_wiring01.jpg" description="" %}
+{% include image.html url="/img/input_thermoprobe_wiring02.jpg" description="" %}
+{% include image.html url="/img/input_itworks.jpg" description="" %}
+
+Unfortunately, my amplifier circuit was not strong enough, and the ATTiny could only detect
+the temperature change to ~2 "points" with "analogRead". Next week, I hope to improve the amplifier
+by using a part that I bought from Digikey.
+
+
+

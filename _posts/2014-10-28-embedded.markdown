@@ -1,0 +1,51 @@
+---
+layout:     post
+title:      Embedded Programming
+image:      img/embedded_header.jpg
+number:     '07'
+---
+
+This week we were tasked to program our board from the [electronics production week](http://fab.cba.mit.edu/classes/863.14/people/matthew_arbesfeld/2014/10/15/electronics-production/).
+
+When I went to program my board, I realized that I had forgotten to connect the RESET pin on the microcontroller to the RESET pin on the 6-pin header. I tried to fix this by connecting the two ports with a jumper wire, but I kept getting the dreaded "initialization failed" error.
+
+My second board faired similarly, though this time I was getting a "MOSI and SCK not connected properly error".
+
+My third board worked great! :)
+
+{% include image.html url="/img/embedded_3_boards.jpg" description="The three boards I made for this week. The top-left board was missing a trace, and the bottom board just failed." %}
+
+## Programming
+
+Since I spent so much of this week debugging issues with my boards, I didn't have a great deal of time to program the board. I used the Arduino IDE to compile to AVR ISP code. Here is my board with the stock Arduino "blink" script:
+
+<iframe style="display:block; margin: 0 auto; padding-bottom: 30px" width="630" height="473" src="//www.youtube.com/embed/0ulmpSkaOak" frameborder="0" allowfullscreen></iframe>
+
+To test the button, I wrote a quick Arduino script which mirrors the LED to the button state:
+
+    int pushButton = 3;
+
+    void setup() {
+      // initialize digital pin 13 as an output.
+      pinMode(7, OUTPUT);
+      // make the pushbutton's pin an input:
+      pinMode(pushButton, INPUT);
+    }
+
+    void loop() {
+
+      int buttonState = digitalRead(pushButton);
+      if (buttonState == 0)
+        digitalWrite(7, HIGH);
+      else
+        digitalWrite(7, LOW);
+      delay(1);
+    }
+
+Here is the board in action.
+
+<iframe style="display:block; margin: 0 auto; padding-bottom: 30px" width="630" height="473" src="//www.youtube.com/embed/E3Ap0AGacUs" frameborder="0" allowfullscreen></iframe>
+
+I am looking forward to building more sophisticated boards and programs in future weeks!
+
+

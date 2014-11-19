@@ -1,0 +1,56 @@
+---
+layout:     post
+title:      Molding and Casting
+image:      img/casting_header.jpg
+number:     '06'
+---
+
+This week we are learning molding and casting, which has a few more steps than you might expect:
+
+1. Design a 3d model with "registration" and a "pour hole."
+2. Mill the part out of a wax block.
+3. Create a silicone negative from the wax block.
+4. Fill the silicone negative with a casting material to form the final part.
+
+## Designing the part
+
+I wanted to make something that would prevent the ends of cables from falling off of my desk. There are a few subtleties in modeling a mold part:
+
+- We are using a 2.5 axis machine, so all cuts have to be vertical. You can divide the piece into multiple sections to achieve this.
+- Include "registration" ports so that the parts can fit together cleanly.
+- Include a hole that is exposed to the outside where liquid can be poured.
+
+Here is a work in progress of my model that shows these features:
+
+{% include image.html url="/img/casting_modeling.jpg" description="" %}
+
+## Milling
+
+I milled the part on the ShopBot and had a great time learning the MasterCam software.
+
+{% include image.html url="/img/casting_milling_wax" description="ShopBot doing its thing!" %}
+
+## Molding
+
+Creating the mold is the easiest part. I mixed some OOMOO 25 as the mold:
+
+{% include image.html url="/img/casting_making_silicone.jpg" description="" %}
+
+And then filled the wax cavity:
+
+{% include image.html url="/img/casting_filling_the_mold.jpg" description="" %}
+
+Tada! It comes out really easily, even without anti-stick spray:
+
+{% include image.html url="/img/casting_mold_finished.jpg" description="" %}
+
+## Casting
+
+I used SmoothCast 256 with black dye as my casting material. It's pretty straightforward to use, just follow the instructions on the box.
+
+{% include image.html url="/img/casting_taping_the_mold.jpg" description="" %}
+
+{% include image.html url="/img/casting_final_part.jpg" description="The final part: ready to hold cables!" %}
+
+
+
