@@ -32,8 +32,6 @@ I used the FormLabs printer for the clear resin. My first print failed miserably
 
 {% include image.html url="/img/3d_print_fail.jpg" description="Failed eyeball print." %}
 
-I'm going to print another eyeball later this week and see how it goes.
-
 
 
 
