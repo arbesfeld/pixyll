@@ -11,4 +11,4 @@ animated: false
 # Build settings
 markdown: kramdown
 permalink: pretty
-paginate: 10
+paginate: 15
