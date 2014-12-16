@@ -153,6 +153,15 @@ This was my first time working with AC power, but I learned a few tricks:
 
 Woo! That was a lot of work.
 
+
+*My post on [Hacker News](https://news.ycombinator.com/item?id=8753027) garnered a lot of feedback on the AC component of my design. There were safety issues in my original design which should have been addressed. Thank you to [cnvogel](https://news.ycombinator.com/user?id=cnvogel) and [mikeytown2](https://news.ycombinator.com/user?id=mikeytown2).*
+
+- I should have used [crimped terminal connectors](https://www.google.com/search?newwindow=1&q=crimp+terminal+connector&spell=1&sa=X&ei=lJ-PVN70IY-INonTgYgC&ved=0CBwQBSgA&biw=1628&bih=953&dpr=0.9) to connect the wire to the inlet sockets.
+- Terminal blocks are safer than screw caps for connecting cables.
+- I could have 3d printed a clip that goes over the terminals on the relay.
+- Always design enclosures with a physical barrier between the "high voltage" side and the "low voltage" side.
+- Running the AC through a device like [this](http://www.homedepot.com/p/Leviton-SmartLockPro-20-Amp-Combo-Slim-Blank-GFCI-Outlet-White-R58-X7590-0KW/202026837) or [this](http://www.functionaldevices.com/building-automation/display.php?model=RIBTE01B) would have made it much safer, especially since we are dealing with water.
+
 # Application Programming
 
 I go into detail about the SousVide controller application in [Week 11](http://fab.cba.mit.edu/classes/863.14/people/matthew_arbesfeld/2014/12/02/applications/). In essence, the app is a cross-platform mobile app that lets you control the temperature and duration of your sous-vide recipes. Some features include:
